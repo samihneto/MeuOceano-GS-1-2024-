@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#catalogo {
+    margin: 5vw 10vw;
+}
+
 .pesquisar {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 5vh;
 }
 
 .procurar {
@@ -12,23 +22,59 @@
     border: 3px solid #093E69;
     border-radius: 50px;
     text-align: center;
-    background-image: url(../img/logo.png);
 }
 
 input::placeholder { 
     color: #093E69;
 }
 
-.img-projeto{
+.img__projeto{
+    margin-top: 50px;
     float: left;
-
+    margin-right: 15px;
 }
 
-.img-limpeza-praia{
-    width: 30vw;
+.img__limpeza{
+    width: 20vw;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);    
 }
 
-.projeto {
+.catalogo__conteudo {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    gap: 2vw;
+    margin-top: 7vh;
+    border-top: 2px solid #093E69;
 }
+
+.catalogo__projeto {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    width: 30vw;
+
+
+}
+/* Vou pro próximo, ok? */
+.catalogo__projeto a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #093E69;
+}
+
+.catalogo__projeto a:hover {
+    color: #388cd1;
+}
+
+.catalogo__projeto p{
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+/* Vou trocar lá. Não sabia; Beleza*/
+/* O double underline é pra boa prática, sempre q for fazer classe, usa pra dividir palavras. Relaxa, eu troco, vai fazendo ai*/
