@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#cabecalho {
+    width: 100vw;
+    padding: 15px;
+    background-color: #DEF3F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho__logo {
+    width: 6vw;
+}
+
+.cabecalho__paginas {
+    display: flex;
+    gap: 2vw;
+    margin-left: 5vw;
+}
+
+.cabecalho__paginas a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #093E69;
+}
+
+/* botao comece esta com espacamento nao sei se é meu navegador 
+Samir: Tá gostando ai?
+André: Tô, tá ficando bunito
+*/
+.cabecalho__comece{
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    background-color: #25BB91;
+    border: none;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 5vw;
+}
+
+
+.cabecalho__entrar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #093E69;
+    
+}
+
+

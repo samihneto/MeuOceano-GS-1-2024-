@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Vou cagar, confio em vocês! */
+
+/* kkkkkkkkk  tmj*/
+#rodape {
+    width: 100vw;
+    background-color: #DEF3F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+
+}
+
+.rodape__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin: 2vw;
+}
+
+.redes__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11vw;
+    height: 5vh;
+    background-color: #093E69;
+    color: #DEF3F6;
+    font-family: "Montserrat";
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.redes__icones {
+    display: flex;
+    color:  #093E69;
+    gap: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.rodape__sobre{
+    display: inline;
+    font-family: "Montserrat";
+    color: #093E69; 
+    text-align: center;
+}
+
+.rodape__sobre h2 {
+    font-weight: 700;
+}
+
+.rodape__sobre h3 {
+    font-weight: 500;
+}
+
+.rodape__suporte {
+    display: inline;
+    font-family: "Montserrat";
+    color: #093E69;
+    text-align: center;
+}
+
+.rodape__suporte h2 {
+    font-weight: 700;
+}
+
+.rodape__suporte h3 {
+    font-weight: 500;
+}
+
+
+.rodape__logo{
+    width: 6vw;
+}
