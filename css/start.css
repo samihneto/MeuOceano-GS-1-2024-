@@ -5,24 +5,103 @@
 }
 
 #conteudo {
-
+    display: flex;
+    justify-content: center;
 }
 
 .comece__caixa {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 4vw;
     margin: 5vw 10vw;
+    width: 40vw;
+    height: 50vh;
+    border: 2px solid #093E69;
+    border-radius: 10px;
 }
 
 .lado__esquerdo {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    margin-top: 5vh;
 }
 
-.comece__titulo
+#comece__titulo {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1vh;;
+}
+
+#comece__org {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+#comece__desc {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 18vh;
+    padding: 0.5vw;
+}
 
 .lado__direito {
     display: flex;
     flex-direction: column;
+}
+
+#comece__categoria {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+#comece__meta {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+#comece__data {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+}
+
+#comece__anexo {
+    margin-bottom: 3vh;
+}
+
+.comece__enviar {
+    border-radius: 15px;
+    align-self: center;
+    border: none;
+    width: 7vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    background-color: #093E69;
+    color: white;
+}
+
+.comece__enviar:hover {
+    scale: 1.1;
 }
