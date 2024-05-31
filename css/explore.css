@@ -24,6 +24,15 @@
     text-align: center;
 }
 
+.fa-magnifying-glass {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #093E69;
+
+}
+
 input::placeholder { 
     color: #093E69;
 }
@@ -50,14 +59,14 @@ input::placeholder {
 }
 
 .catalogo__projeto {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     font-family: 'Montserrat';
     width: 30vw;
 
 
 }
-/* Vou pro próximo, ok? */
+/* Vou pro próximo, ok?  BELÊ*/
 .catalogo__projeto a {
     margin: 0;
     padding: 0;
