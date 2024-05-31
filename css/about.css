@@ -3,3 +3,64 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin: 5vw 10vw;
+}
+
+.conteudo__fichas {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.titulo__about{
+    font-size: 3vw;
+    margin-top: 20px;
+    text-align: center;   
+    font-family: "Montserrat", sans-serif; 
+    color: #093E69;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 50vh;
+    gap: 0.5vw;
+    background-color: white;
+    border: 2px solid #093E69;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.about__img {
+    width: 8vw;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+
+.about h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #093E69;
+}
+
+.about h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #093E69
+}
+
+.about__icones {
+    font-size: 30px;
+    color: #093E69;
+}
