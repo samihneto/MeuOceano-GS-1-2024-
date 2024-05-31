@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Oceano - Criando seu projeto</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/start.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,14 +17,47 @@
         <img src="./img/logo.png" alt="" class="cabecalho__logo">
         <nav class="cabecalho__paginas">
             <a href="../" class="paginas__home">HOME</a>
-            <a href="./pages/catalogo.html" class="paginas__explore">EXPLORE</a>
-            <a href="./pages/about.html" class="paginas__sobre">SOBRE NÓS</a>
+            <a href="./catalogo.html" class="paginas__explore">EXPLORE</a>
+            <a href="./about.html" class="paginas__sobre">SOBRE NÓS</a>
         </nav>
-        <a href="./pages/start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
-        <a href="./pages/login.html" class="cabecalho__entrar"> ENTRAR</a>
+        <a href="./start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
+        <a href="./login.html" class="cabecalho__entrar"> ENTRAR</a>
     </header>
-    <main>
+    <main id="conteudo">
+        <form name="comece" id="comece" action="" method="post">
+            <fieldset class="comece__caixa">
+                <div class="lado__esquerdo">
+                    <label for="comece__titulo">Título do Projeto</label>
+                    <input type="text" name="comece__titulo" id="comece__titulo">
+                    <label for="comece__org">Organização responsável</label>
+                    <input type="text" name="comece__org" id="comece__org">
+                    <label for="comece__desc">Descrição</label>
+                    <input type="textarea" name="comece__desc" id="comece__desc">
+                </div>
+                <div class="lado__direito">
+                    <label for="comece__categoria">Selecione uma categoria de projeto:</label>
+                    <select name="comece__categoria" id="comece__categoria">
+                        <option value="0" disabled selected>Selecione sua opção</option>
+                        <option value="1">Limpeza de Praia</option>
+                        <option value="2">Coleta de Lixo na Água</option>
+                        <option value="3">Purificação de Água</option>
+                    </select>
+                    <label for="comece__org">Selecione a meta a ser alcançada:</label>
+                    <select name="comece__org" id="comece__org">
+                        <option value="0" disabled selected>Selecione sua opção</option>
+                        <option value="1">Total</option>
+                        <option value="2">Parcial</option>
+                        <option value="3">Trocados</option>
+                    </select>
+                    <label for="comece__data">Data-limite:</label>
+                    <input type="date" name="comece__data" id="comece__data">
+                    <label for="comece__data">Anexo</label>
+                    <input type="file" name="comece__anexo" id="comece__anexo">
+                    <button class="comece__enviar">Enviar</button>
 
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer id="rodape">
         <div class="rodape__redes">

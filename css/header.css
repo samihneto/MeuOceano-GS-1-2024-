@@ -33,6 +33,10 @@
     color: #093E69;
 }
 
+.cabecalho__paginas a:hover {
+    font-weight: 700;
+}
+
 /* botao comece esta com espacamento nao sei se é meu navegador 
 Samir: Tá gostando ai?
 André: Tô, tá ficando bunito
@@ -49,6 +53,10 @@ André: Tô, tá ficando bunito
     margin-left: 5vw;
 }
 
+.cabecalho__comece:hover {
+    scale: 1.1;
+}
+
 
 .cabecalho__entrar {
     font-family: "Montserrat", sans-serif;
@@ -58,4 +66,6 @@ André: Tô, tá ficando bunito
     
 }
 
-
+.cabecalho__entrar:hover {
+    font-weight: 700;
+}

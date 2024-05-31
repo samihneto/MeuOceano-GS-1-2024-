@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteudo {
+
+}
+
+.comece__caixa {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin: 5vw 10vw;
+}
+
+.lado__esquerdo {
+    display: flex;
+    flex-direction: column;
+}
+
+.comece__titulo
+
+.lado__direito {
+    display: flex;
+    flex-direction: column;
+}

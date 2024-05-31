@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Oceano - Login</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,17 +14,34 @@
 </head>
 <body>
     <header id="cabecalho">
-        <img src="./img/logo.png" alt="" class="cabecalho__logo">
+        <img src="../img/logo.png" alt="" class="cabecalho__logo">
         <nav class="cabecalho__paginas">
             <a href="../" class="paginas__home">HOME</a>
-            <a href="./pages/catalogo.html" class="paginas__explore">EXPLORE</a>
-            <a href="./pages/about.html" class="paginas__sobre">SOBRE NÓS</a>
+            <a href="./catalogo.html" class="paginas__explore">EXPLORE</a>
+            <a href="./about.html" class="paginas__sobre">SOBRE NÓS</a>
         </nav>
-        <a href="./pages/start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
-        <a href="./pages/login.html" class="cabecalho__entrar"> ENTRAR</a>
+        <a href="./start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
+        <a href="./login.html" class="cabecalho__entrar"> ENTRAR</a>
     </header>
-    <main>
+    <main id="conteudo">
+        <form name="login" id="login" action="" method="post">
+        <fieldset class="login__caixa">
+            <h2 class="login__titulo"> Meu Oceano </h2>
+            <!-- <img src="../img/logo.png" alt="" class="login__logo"> -->
+            <div class="inputs">
+                <input type="text" name="login__usuario" id="login__usuario" required placeholder="Usuário">
+                <input type="password" name="login__senha" id="login__senha" required placeholder="Senha">
+            </div>
+            <div class="login__check">
+                <input type="checkbox" name="login__check" id="login__check">
+                <label for="login__check" class="label__check"> Lembrar de mim </label>
+                <a href="#" class="esqueceu"> Esqueceu a senha? <a>
+            </div>
 
+            <button class="login__entrar">LOGIN</button> 
+
+        </fieldset>
+        </form>
     </main>
     <footer id="rodape">
         <div class="rodape__redes">
@@ -45,7 +62,7 @@
             <h3 class="suporte__texto1">Assistente Virtual</h3>
             <h3 class="suporte__texto2">Perguntas e respostas</h3>
         </div>
-        <img src="./img/logo.png" alt="" class="rodape__logo">
+        <img src="../img/logo.png" alt="" class="rodape__logo">
     </footer>
 </body>
 </html>
