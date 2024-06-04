@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
+    <title>Meu Oceano - Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7d4af399f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header id="cabecalho">
+        <img src="../img/logo.png" alt="" class="cabecalho__logo">
+        <nav class="cabecalho__paginas">
+            <a href="../" class="paginas__home">HOME</a>
+            <a href="./catalogo.html" class="paginas__explore">EXPLORE</a>
+            <a href="./about.html" class="paginas__sobre">SOBRE NÓS</a>
+        </nav>
+        <a href="./start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
+        <a href="./login.html" class="cabecalho__entrar"> ENTRAR</a>
+    </header>
+    <main>
+        <form name="cadastro" id="" action="" method="post">
+            <fieldset class="cadastro__caixa">
+                <div class="filas">
+                    <div class="fila__esquerda">
+                        <label for="cadastro__nome">Nome Completo</label>
+                        <input type="text" name="cadastro__nome" id="cadastro__nome">
+                        <label for="cadastro__usuario">Usuário</label>
+                        <input type="text" name="cadastro__usuario" id="cadastro__usuario">
+                        <label for="cadastro__rg">RG</label>
+                        <input type="text" name="cadastro__rg" id="cadastro__rg">
+                        <label for="cadastro__cpf">CPF</label>
+                        <input type="text" name="cadastro__cpf" id="cadastro__cpf">
+                    </div>
+                    <div class="fila__direita">
+                        <label for="cadastro__nasc">Ano de Nascimento</label>
+                        <input type="date" name="cadastro__nasc" id="cadastro__nasc">
+                        <label for="cadastro__email">Email</label>
+                        <input type="email" name="cadastro__email" id="cadastro__email">
+                        <label for="cadastro__tel">Telefone</label>
+                        <input type="tel" name="cadastro__tel" id="cadastro__tel">
+                        <label for="cadastro__endereco">Endereço</label>
+                        <input type="text" name="cadastro__endereco" id="cadastro__endereco">
+                    </div>
+                </div>
+                <button class="btn__cadastro">CADASTRAR</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer id="rodape">
+        <div class="rodape__redes">
+            <h2 class="redes__titulo">Redes sociais</h2>
+            <div class="redes__icones">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="rodape__sobre">
+            <h2 class="sobre__titulo">Sobre</h2>
+            <h3 class="sobre__texto1">Sobre nós</h3>
+            <h3 class="sobre__texto2">Dados</h3>
+        </div>
+        <div class="rodape__suporte">
+            <h2 class="suporte__titulo">Suporte</h2>
+            <h3 class="suporte__texto1">Assistente Virtual</h3>
+            <h3 class="suporte__texto2">Perguntas e respostas</h3>
+        </div>
+        <img src="../img/logo.png" alt="" class="rodape__logo">
+    </footer>
 </body>
 </html>

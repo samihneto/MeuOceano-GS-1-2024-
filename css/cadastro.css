@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cadastro__caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    padding: 2vw;
+    gap: 1vw;
+    border: 2px solid #093E69;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.filas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+}
+
+.fila__esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila__direita {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1vh;;
+}
+
+#cadastro__nome {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__usuario {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__rg {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__cpf {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__nasc {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__email {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__tel {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+#cadastro__endereco {
+    border: 2px solid #093E69;
+    border-radius: 15px;
+    width: 12vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh;
+}
+
+.btn__cadastro {
+    border-radius: 15px;
+    align-self: center;
+    border: none;
+    width: 7vw;
+    height: 5vh;
+    margin-bottom: 3vh;
+    background-color: #093E69;
+    color: white;
+    font-size: 0.8vw;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.5s;
+    padding: 1vh;
+}
+
+.btn__cadastro:hover {
+    scale: 1.1;
+    background-color: #0778d5;
+}

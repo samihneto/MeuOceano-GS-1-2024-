@@ -3,16 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Vou cagar, confio em vocês! */
 
-/* kkkkkkkkk  tmj*/
 #rodape {
-    width: 100vw;
+    width: 100%;
     background-color: #DEF3F6;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7vw;
+    gap: 5vw;
+    padding: 20px;
 
 }
 
@@ -21,28 +20,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
-    margin: 2vw;
+    gap: 10px;
+    margin: 15px;
 }
 
 .redes__titulo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 11vw;
-    height: 5vh;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    width: 200px;
+    height: 40px;
     background-color: #093E69;
     color: #DEF3F6;
     font-family: "Montserrat";
     font-weight: bold;
     border-radius: 10px;
+    transition: 1s;
+}
+
+.redes__titulo:hover {
+    scale: 1.1;
+    background-color: #0778d5;
 }
 
 .redes__icones {
     display: flex;
     color:  #093E69;
-    gap: 0.5vw;
-    font-size: 1.5vw;
+    gap: 10px;
+    font-size: 3cqh;
+}
+
+.fa-facebook:hover {
+    color: #0778d5;
+}
+
+.fa-instagram:hover {
+    color: #0778d5;
+}
+
+.fa-twitter:hover {
+    color: #0778d5;
 }
 
 .rodape__sobre{
@@ -77,5 +96,139 @@
 
 
 .rodape__logo{
-    width: 6vw;
+    width: 150px;
+}
+
+.suporte__titulo {
+    transition: 1s;
+}
+
+.suporte__titulo:hover {
+    color: #0778d5;
+    scale: 1.1;
+}
+
+.suporte__texto1:hover {
+    color: #0778d5;
+    font-weight: 500;
+}
+
+.suporte__texto2:hover {
+    color: #0778d5;
+    font-weight: 500;
+}
+
+.sobre__titulo {
+    transition: 1s;
+}
+
+.sobre__titulo:hover {
+    color: #0778d5;
+    scale: 1.1;
+}
+
+.sobre__texto1:hover {
+    color: #0778d5;
+    font-weight: 500;
+}
+
+.sobre__texto2:hover {
+    color: #0778d5;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1440px) {
+    .rodape__logo{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .rodape__sobre h2 {
+        font-size: 24px;
+    }
+    
+    .rodape__sobre h3 {
+        font-size: 18px;
+    }
+    
+    .rodape__suporte h2 {
+        font-size: 24px;
+    }
+    
+    .rodape__suporte h3 {
+        font-size: 18px;
+    }
+
+    .rodape__logo{
+        width: 100px;
+    }
+
+    .redes__titulo {
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .redes__icones {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rodape__sobre h2 {
+        font-size: 20px;
+    }
+    
+    .rodape__sobre h3 {
+        font-size: 12px;
+    }
+    
+    .rodape__suporte h2 {
+        font-size: 20px;
+    }
+    
+    .rodape__suporte h3 {
+        font-size: 12px;
+    }
+
+    .rodape__logo{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .rodape__sobre h2 {
+        font-size: 16px;
+    }
+    
+    .rodape__sobre h3 {
+        font-size: 10px;
+    }
+    
+    .rodape__suporte h2 {
+        font-size: 16px;
+    }
+    
+    .rodape__suporte h3 {
+        font-size: 10px;
+    }
+
+    .rodape__logo{
+        width: 70px;
+    }
+    .redes__titulo {
+        width: 160px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .redes__icones {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    
 }

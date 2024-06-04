@@ -4,26 +4,28 @@
     box-sizing: border-box;
 }
 
-
 #cabecalho {
-    width: 100vw;
-    padding: 15px;
     background-color: #DEF3F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
+.cabecalho__barra {
+    width: 100%;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+}
+
 .cabecalho__logo {
-    width: 6vw;
+    width: 150px;
 }
 
 .cabecalho__paginas {
     display: flex;
-    gap: 2vw;
-    margin-left: 5vw;
+    align-items: center;
+    gap: 15px;
 }
 
 .cabecalho__paginas a {
@@ -37,20 +39,16 @@
     font-weight: 700;
 }
 
-/* botao comece esta com espacamento nao sei se é meu navegador 
-Samir: Tá gostando ai?
-André: Tô, tá ficando bunito
-*/
 .cabecalho__comece{
-    width: 10vw;
-    height: 6vh;
+    width: 200px;
+    height: 50px;
     color: white;
     background-color: #25BB91;
     border: none;
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin-left: 5vw;
+    margin-left: 0;
 }
 
 .cabecalho__comece:hover {
@@ -68,4 +66,130 @@ André: Tô, tá ficando bunito
 
 .cabecalho__entrar:hover {
     font-weight: 700;
+}
+
+.mobile__icone {
+    display: none;
+}
+
+.mobile__icone button {
+    border: none;
+    background-color: #093E69;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.mobile__icone p {
+    color: white;
+}
+
+.mobile__menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px) {
+    #cabecalho__barra {
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho__comece {
+        width: 200px;
+    }
+    .cabecalho__logo {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #cabecalho__barra {
+        width: 100vw;
+        height: 20vh;
+        gap: 50px;
+    }
+    .cabecalho__comece {
+        width: 175px;
+        font-size: 12px;
+    }
+    .cabecalho__logo {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cabecalho__barra {
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .mobile__icone {
+        display: block;
+    }
+
+    .cabecalho__entrar {
+        display: none;
+    }
+
+    .cabecalho__paginas {
+        display: none;
+    }
+
+
+    .mobile__menu {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .mobile__menu a {
+        align-self: center;
+        color: #093E69;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        width: 20%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    .mobile__menu a:nth-child(4) {
+        border-bottom: none;
+        background-color: #25BB91;
+        padding: 5px;
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .open {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .mobile__menu {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #cabecalho__barra {
+        gap: 0;
+    }
+
+    .cabecalho__comece {
+        width: 120px;
+        font-size: 9px;
+    }
+
+    .cabecalho__logo {
+        width: 100px;
+    }
+
+    .mobile__menu a {
+        width: 30%;
+    }
 }
