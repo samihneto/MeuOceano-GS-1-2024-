@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
-    height: 60vh;
+    width: 1000px;
+    height: 700px;
     background-color: white;
     border: 3px solid #093E69;
     border-radius: 30px;
@@ -27,7 +27,7 @@
 .login__titulo{
     font-family: 'Montserrat';
     color: #093E69;
-    font-size: 2vw;
+    font-size: 50px;
 }
 
 
@@ -46,8 +46,8 @@
 }
 
 .inputs input{
-    width: 20vw;
-    height: 6vh;
+    width: 400px;
+    height: 70px;
     margin: 20px 0;
     border-radius: 50px;
     border: 3px solid #093E69;
@@ -58,7 +58,10 @@
 
 input::placeholder{
     color: #093E69;
-    text-indent: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 input[type=text]:focus{
@@ -80,12 +83,13 @@ input[type=password]:focus{
 
 .login__check a{
     text-decoration: none;
+    color:#0058AB;
 }
 
 .login__entrar{
-    width: 7vw;
-    height: 6vh;
-    margin-top: 50px;
+    width: 120px;
+    height: 60px;
+    margin-top: 20px;
     background-color: #25BB91;
     color: white;
     border-radius: 10px;
@@ -101,21 +105,173 @@ input[type=password]:focus{
 
 
 @media screen and (max-width: 1440px) {
-
+    .login__caixa{
+        width: 800px;
+        height: 700px;
+    }
+    #login{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .inputs input{
+        width: 400px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    input::placeholder{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .login__entrar{
+        width: 120px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    
+    .login__caixa{
+        width: 700px;
+        height: 700px;
+    }
+    #login{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .inputs input{
+        width: 400px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    input::placeholder{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .login__entrar{
+        width: 120px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    } 
 }
 
-@media screen and (max-width: 758px) {
-    
+@media screen and (max-width: 768px) {
+
+    .login__titulo{
+        font-size: 40px;
+    }
+    .login__caixa{
+        width: 550px;
+        height: 600px;
+        margin: 50px 0;
+    }
+    #login{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .inputs input{
+        width: 400px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    input::placeholder{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .login__entrar{
+        width: 120px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    } 
 }
 
 @media screen and (max-width: 640px) {
-    
+    .login__titulo{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .login__caixa{
+        width: 450px;
+        height: 600px;
+        margin: 50px 0;
+    }
+    #login{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .inputs input{
+        width: 300px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    input::placeholder{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .login__entrar{
+        width: 120px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    } 
 }
 
 @media screen and (max-width: 475px) {
-    
+    .login__titulo{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .login__caixa{
+        width: 350px;
+        height: 500px;
+        margin: 120px 0;
+    }
+    #login{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .inputs input{
+        width: 250px;
+        height: 70px;
+        margin: 20px 0;
+    }
+    input::placeholder{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .login__entrar{
+        width: 120px;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    } 
+    .esqueceu {
+        font-size: 12px;
+    }
+    .label__check {
+        font-size: 12px;
+        border-right: 1px solid #0058AB;
+        padding-right: 5px;
+    }
+
+    #login__check {
+        border: 1px solid #0058AB;
+    }
 }

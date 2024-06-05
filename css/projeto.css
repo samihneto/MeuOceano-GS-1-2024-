@@ -12,13 +12,13 @@
    align-items: center;
    margin: 3vw 10vw;
    height: 60vh;
-   gap: 2vw;
+   gap: 40px;
 }
 
 .conteudo__titulo {
     font-family: "Montserrat", sans-serif;
     color: #093E69;
-    font-size: 3vw;
+    font-size: 60px;
 }
 
 .conteudo__caixa {
@@ -28,7 +28,7 @@
     align-items: center;
     background-image: url(../img/limpeza_praia.jpg);
     background-repeat: no-repeat;
-    background-size: 60vw 100vh;
+    background-size: cover;
     width: 60vw;
     height: 30vh;
     border-radius: 10px;
@@ -53,12 +53,12 @@
     border: 2px solid white;
     color: white;
     text-decoration: none;
-    padding: 0.2vw;
+    padding: 5px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 1.5vw;
-    width: 9vw;
-    height: 7vh;
+    font-size: 25px;
+    width: 140px;
+    height: 60px;
     border-radius: 10px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
@@ -67,37 +67,263 @@
 .conteudo__informacoes {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 700px;
     align-content: center;
     color: #093E69;
     font-family: "Montserrat", sans-serif;
 }
 
 .info__titulo {
-    font-size: 2vw;
+    font-size: 40px;
 }
 
 .info__texto {
-    font-size: 0.8vw;
+    font-size: 14px;
     
 }
 
 @media screen and (max-width: 1440px) {
-
+    #conteudo {
+        margin: 100px 0;
+        height: 70vh;
+        gap: 80px;
+     }
+     
+     .conteudo__titulo {
+         font-size: 60px;
+     }
+     
+     .conteudo__caixa {
+         width: 800px;
+         height: 300px;
+         border-radius: 10px;
+         padding: 50px;
+         gap: 20px;
+     }
+     .caixa__texto {
+         font-weight: 700;
+         font-size: 14px;
+     }
+     
+     .caixa__botao {
+        padding: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+     }
+     
+     .conteudo__informacoes {
+         display: flex;
+         flex-direction: column;
+         width: 700px;
+         align-content: center;
+         color: #093E69;
+         font-family: "Montserrat", sans-serif;
+     }
+     
+     .info__titulo {
+         font-size: 40px;
+     }
+     
+     .info__texto {
+         font-size: 14px;
+         
+     }
 }
 
 @media screen and (max-width: 1024px) {
-    
+    #conteudo {
+        margin: 50px 0;
+        height: 70vh;
+        gap: 40px;
+     }
+     
+     .conteudo__titulo {
+         font-size: 60px;
+     }
+     
+     .conteudo__caixa {
+         width: 800px;
+         height: 300px;
+         border-radius: 10px;
+         padding: 50px;
+         gap: 20px;
+         background-size: auto;
+     }
+     .caixa__texto {
+         font-weight: 700;
+         font-size: 14px;
+     }
+     
+     .caixa__botao {
+        padding: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+     }
+     
+     .conteudo__informacoes {
+         display: flex;
+         flex-direction: column;
+         width: 700px;
+         align-content: center;
+         color: #093E69;
+         font-family: "Montserrat", sans-serif;
+     }
+     
+     .info__titulo {
+         font-size: 40px;
+     }
+     
+     .info__texto {
+         font-size: 14px;
+         
+     }
 }
 
-@media screen and (max-width: 758px) {
-    
+@media screen and (max-width: 768px) {
+    #conteudo {
+        margin: 50px 0;
+        height: 70vh;
+        gap: 40px;
+     }
+     
+     .conteudo__titulo {
+         font-size: 50px;
+     }
+     
+     .conteudo__caixa {
+         width: 600px;
+         height: 300px;
+         border-radius: 10px;
+         padding: 50px;
+         gap: 15px;
+         background-size: auto;
+     }
+     .caixa__texto {
+         font-weight: 700;
+         font-size: 12px;
+     }
+     
+     .caixa__botao {
+        padding: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+     }
+     
+     .conteudo__informacoes {
+         width: 600px;
+     }
+     
+     .info__titulo {
+         font-size: 35px;
+     }
+     
+     .info__texto {
+         font-size: 14px;
+         
+     }
 }
 
 @media screen and (max-width: 640px) {
-    
+    #conteudo {
+        margin: 30px 0;
+        height: 70vh;
+        gap: 40px;
+     }
+     
+     .conteudo__titulo {
+         font-size: 40px;
+     }
+     
+     .conteudo__caixa {
+         width: 450px;
+         height: 400px;
+         border-radius: 10px;
+         padding: 50px;
+         gap: 45px;
+         background-size: auto;
+     }
+     .caixa__texto {
+         font-weight: 700;
+         font-size: 12px;
+     }
+     
+     .caixa__botao {
+        padding: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+     }
+     
+     .conteudo__informacoes {
+         width: 450px;
+     }
+     
+     .info__titulo {
+         font-size: 30px;
+     }
+     
+     .info__texto {
+         font-size: 13px;
+         
+     } 
 }
 
 @media screen and (max-width: 475px) {
-    
+    #conteudo {
+        margin: 40px 0;
+        height: 70vh;
+        gap: 40px;
+     }
+     
+     .conteudo__titulo {
+         font-size: 35px;
+     }
+     
+     .conteudo__caixa {
+         width: 400px;
+         height: 350px;
+         border-radius: 10px;
+         padding: 25px 0;
+         padding: 50px;
+         gap: 45px;
+         background-size: auto;
+     }
+     .caixa__texto {
+         font-weight: 700;
+         font-size: 11px;
+         margin-top: 15px;
+     }
+     
+     .caixa__botao {
+        padding: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        width: 140px;
+        height: 60px;
+        border-radius: 10px;
+     }
+     
+     .conteudo__informacoes {
+         width: 400px;
+     }
+     
+     .info__titulo {
+         font-size: 30px;
+     }
+     
+     .info__texto {
+         font-size: 13px;
+         
+     } 
 }
