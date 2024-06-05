@@ -105,3 +105,24 @@ label {
 .comece__enviar:hover {
     scale: 1.1;
 }
+
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 758px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+}
+
+@media screen and (max-width: 475px) {
+    
+}

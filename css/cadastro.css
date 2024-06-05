@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+#cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cadastro__caixa {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5vw;
+    width: 1000px;
+    height: auto;
+    margin: 100px 0;
     padding: 2vw;
     gap: 1vw;
     border: 2px solid #093E69;
@@ -21,6 +29,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
+    margin-top: 10px;
 }
 
 .fila__esquerda {
@@ -36,91 +45,91 @@
 label {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    margin-bottom: 1vh;;
+    margin-bottom: 10px;
 }
 
 #cadastro__nome {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__usuario {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__rg {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__cpf {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__nasc {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__email {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__tel {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 #cadastro__endereco {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
-    margin-bottom: 3vh;
-    padding: 1vh;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .btn__cadastro {
     border-radius: 15px;
     align-self: center;
     border: none;
-    width: 7vw;
-    height: 5vh;
-    margin-bottom: 3vh;
+    width: 150px;
+    height: 60px;
+    margin-bottom: 10px;
     background-color: #093E69;
     color: white;
-    font-size: 0.8vw;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     transition: 0.5s;
     padding: 1vh;
@@ -129,4 +138,115 @@ label {
 .btn__cadastro:hover {
     scale: 1.1;
     background-color: #0778d5;
+}
+
+@media screen and (max-width: 1440px) {
+    .cadastro__caixa {
+        height: 600px;
+    }
+    #cadastro__usuario {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .filas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        margin-top: 10px;
+    }
+    .cadastro__caixa {
+        width: 800px;
+        height: 650px;
+        gap: 20px;
+    }
+    label {
+        margin-bottom: 0;
+    }
+
+    .fila__esquerda {
+        gap: 10px;
+    }
+    
+    .fila__direita {
+        gap: 10px;
+    }
+}  
+
+
+@media screen and (max-width: 768px) {
+    .filas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        margin-top: 10px;
+    }
+    .cadastro__caixa {
+        width: 700px;
+        height: 650px;
+        gap: 20px;
+    }
+    label {
+        margin-bottom: 0;
+    }
+
+    .fila__esquerda {
+        gap: 10px;
+    }
+    
+    .fila__direita {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    .filas {
+        display: flex;
+        flex-direction: column;
+    }
+    .cadastro__caixa {
+        width: 500px;
+        height: 1000px;
+        gap: 20px;
+    }
+    label {
+        margin-bottom: 0;
+    }
+
+    .fila__esquerda {
+        gap: 10px;
+    }
+    
+    .fila__direita {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .filas {
+        display: flex;
+        flex-direction: column;
+    }
+    .cadastro__caixa {
+        width: 350px;
+        height: 1000px;
+        gap: 20px;
+        margin: 50px 0;
+    }
+    label {
+        margin-bottom: 0;
+    }
+
+    .fila__esquerda {
+        gap: 10px;
+    }
+    
+    .fila__direita {
+        gap: 10px;
+    }
 }

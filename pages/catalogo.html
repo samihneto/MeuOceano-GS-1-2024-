@@ -15,15 +15,28 @@
 </head>
 <body>
     <header id="cabecalho">
-        <img src="../img/logo.png" alt="" class="cabecalho__logo">
-        <nav class="cabecalho__paginas">
-            <a href="../" class="paginas__home">HOME</a>
-            <a href="./catalogo.html" class="paginas__explore">EXPLORE</a>
-            <a href="./about.html" class="paginas__sobre">SOBRE NÓS</a>
+        <nav class="cabecalho__barra">
+            <img src="../img/logo.png" alt="" class="cabecalho__logo">
+            <div class="cabecalho__paginas">
+                <a href="../" class="paginas__home">HOME</a>
+                <a href="./pages/catalogo.html" class="paginas__explore">EXPLORE</a>
+                <a href="./pages/about.html" class="paginas__sobre">SOBRE NÓS</a>
+            </div>
+            <a href="./pages/start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
+            <a href="./pages/login.html" class="cabecalho__entrar"> ENTRAR</a>
+            <div class="mobile__icone">
+                <button onclick="menuShow()"><p>MENU</p></button>
+            </div>
         </nav>
-        <a href="./start.html"><button class="cabecalho__comece">COMECE SEU PROJETO</button></a>
-        <a href="./login.html" class="cabecalho__entrar"> ENTRAR</a>
+        <div class="mobile__menu">
+            <a href="../" class="paginas__home">HOME</a>
+            <a href="./pages/catalogo.html" class="paginas__explore">EXPLORE</a>
+            <a href="./pages/about.html" class="paginas__sobre">SOBRE NÓS</a>
+            <a href="./pages/login.html" class="cabecalho__entrar2">ENTRAR</a>  
+        </div>
+
     </header>
+    <script src="../js/script.js"></script>
         <main id="catalogo">
                 <!-- Barra de pesquisa -->
             <div class="pesquisar">   
