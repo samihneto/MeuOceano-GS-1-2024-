@@ -1,3 +1,5 @@
+const btnLogin = document.querySelector(".login__entrar");
+
 let listaUsuarios = [
     { user: "admin", senha: "123456" },
     { user: "usersamir", senha: "123456" },
@@ -5,28 +7,23 @@ let listaUsuarios = [
     { user: "userlevy", senha: "123456" },
 ];
 
-function login(username, password) {
-    let message;
-    for (let index = 0; index < listaUsuarios.length; index++) {
-        const usuario = listaUsuarios[index];
-        if (usuario.user === username && usuario.senha === password) {
+const login = (username, password) => {
+    for(let index = 0; index < listaUsuarios.length; index++) {
+        if (username === listaUsuarios[index].user && password === listaUsuarios[index].senha) {
             let mathRandom = Math.random().toString(16).substr(2);
             let token = mathRandom + mathRandom;
             localStorage.setItem('token', token);
-            localStorage.setItem('userLogado', JSON.stringify(usuario));
-            message = "Login efetuado com sucesso!";
-            window.location.href = "./about.html";
+            localStorage.setItem('userLogado', JSON.stringify(listaUsuarios[index]));
+            window.location.href = "../index.html";
             return;
-        } else {
-            message = "Credenciais inválidas!";
         }
     }
-    console.log(message);
-}
+    alert("Credenciais inválidas!");
+};
 
-let btnLogin = window.document.querySelector(".login__entrar");
-btnLogin.addEventListener('submit', ()=>{
-    let inputuser = window.document.querySelector("#login__usuario");
-    let inputsenha = window.document.querySelector("#login__senha");
-    login(inputuser.value, inputsenha.value);
+btnLogin.addEventListener('click', (event) => {
+    event.preventDefault();
+    const inputuser = document.querySelector("#login__usuario").value;
+    const inputsenha = document.querySelector("#login__senha").value;
+    login(inputuser, inputsenha);
 });
