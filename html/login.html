@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7d4af399f.js" crossorigin="anonymous"></script>
+    <script src="../js/login.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -34,12 +36,11 @@
             <a href="../html/login.html" class="cabecalho__entrar2">ENTRAR</a>  
         </div>
     </header>
-    <script src="../js/script.js"></script>
+
     <main id="conteudo">
-        <form name="login" id="login" action="" method="post">
+        <form name="login" id="login" action="" method="get">
         <fieldset class="login__caixa">
             <h2 class="login__titulo"> Meu Oceano </h2>
-            <!-- <img src="../img/logo.png" alt="" class="login__logo"> -->
             <div id="msgError"></div>
             <a href="../pages/cadastro.html" class="login__conta"> Não tem uma conta? </a>
             <div class="inputs">
@@ -52,7 +53,7 @@
                 <a href="#" class="esqueceu"> Esqueceu a senha? <a>
             </div>
 
-            <button class="login__entrar">LOGIN</button> 
+            <button class="login__entrar" type="submit">LOGIN</button> 
 
         </fieldset>
         </form>
@@ -78,6 +79,5 @@
         </div>
         <img src="../img/logo.png" alt="" class="rodape__logo">
     </footer>
-    <script src="../js/login.js"></script>
 </body>
 </html>
