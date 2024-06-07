@@ -40,15 +40,20 @@
 }
 
 .cabecalho__comece{
+    display: inline-block;
     width: 200px;
     height: 50px;
     color: white;
     background-color: #25BB91;
     border: none;
     border-radius: 10px;
+    font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-left: 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
 }
 
 .cabecalho__comece:hover {
