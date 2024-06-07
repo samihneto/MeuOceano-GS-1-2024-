@@ -53,13 +53,13 @@
     border: 3px solid #093E69;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    text-indent: 10px
+    text-indent: 10px;
+    padding: 10px;
 }
 
 input::placeholder{
     color: #093E69;
     font-size: 20px;
-    padding-left: 10px;
     font-family: "Montserrat", sans-serif;
 
 }
@@ -101,6 +101,18 @@ input[type=password]:focus{
 
 .login__entrar:hover{
     scale: 1.1;
+}
+
+.login__conta {
+    text-decoration: none;
+    color:#0058AB;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.login__conta:hover {
+    color:#0b89ff;
 }
 
 
@@ -275,3 +287,13 @@ input[type=password]:focus{
         border: 1px solid #0058AB;
     }
 }
+
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }

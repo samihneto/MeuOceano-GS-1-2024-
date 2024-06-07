@@ -13,47 +13,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4vw;
-    margin: 5vw 10vw;
-    width: 40vw;
-    height: 50vh;
+    gap: 60px;
+    margin: 50px 50px;
+    width: 1000px;
+    height: 700px;
     border: 2px solid #093E69;
     border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .lado__esquerdo {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    margin-top: 5vh;
+    align-self: center;
+    margin-top: 0;
 }
 
 #comece__titulo {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
     margin-bottom: 3vh;
 }
 
 label {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    margin-bottom: 1vh;;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #093E69;
 }
 
 #comece__org {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
     margin-bottom: 3vh;
 }
 
 #comece__desc {
     border: 2px solid #093E69;
     border-radius: 15px;
-    width: 12vw;
+    width: 300px;
     height: 18vh;
     padding: 0.5vw;
 }
@@ -65,41 +67,46 @@ label {
 
 #comece__categoria {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
     margin-bottom: 3vh;
+    padding: 10px;
 }
 
 #comece__meta {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
     margin-bottom: 3vh;
+    padding: 10px;
 }
 
 #comece__data {
     border: 2px solid #093E69;
-    border-radius: 15px;
-    width: 12vw;
-    height: 3vh;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
     margin-bottom: 3vh;
+    padding: 10px;
 }
 
 #comece__anexo {
-    margin-bottom: 3vh;
+    margin-bottom: 20px;
 }
 
 .comece__enviar {
     border-radius: 15px;
     align-self: center;
     border: none;
-    width: 7vw;
-    height: 3vh;
-    margin-bottom: 3vh;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 0;
     background-color: #093E69;
     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
 }
 
 .comece__enviar:hover {
@@ -108,21 +115,383 @@ label {
 
 
 @media screen and (max-width: 1440px) {
-
+    .comece__caixa {
+        gap: 60px;
+        margin: 50px 50px;
+        width: 1000px;
+        height: 700px;
+    }
+    
+    .lado__esquerdo {
+        margin-top: 0;
+    }
+    
+    #comece__titulo {
+        border: 2px solid #093E69;
+        border-radius: 25px;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    
+    #comece__org {
+        border: 2px solid #093E69;
+        border-radius: 25px;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #comece__desc {
+        border: 2px solid #093E69;
+        border-radius: 15px;
+        width: 300px;
+        height: 18vh;
+        padding: 0.5vw;
+    }
+    
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #comece__categoria {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__meta {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__data {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__anexo {
+        margin-bottom: 20px;
+    }
+    
+    .comece__enviar {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .comece__caixa {
+        gap: 60px;
+        margin: 50px 50px;
+        width: 750px;
+        height: 700px;
+    }
     
+    .lado__esquerdo {
+        margin-top: 0;
+    }
+    
+    #comece__titulo {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    
+    #comece__org {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #comece__desc {
+        width: 300px;
+        height: 18vh;
+        padding: 0.5vw;
+    }
+    
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #comece__categoria {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__meta {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__data {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__anexo {
+        margin-bottom: 20px;
+    }
+    
+    .comece__enviar {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 758px) {
+    .comece__caixa {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 50px;
+        width: 500px;
+        height: 900px;
+    }
     
+    .lado__esquerdo {
+        margin-top: 0;
+    }
+    
+    #comece__titulo {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    
+    #comece__org {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #comece__desc {
+        width: 300px;
+        height: 18vh;
+        padding: 0.5vw;
+    }
+    
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #comece__categoria {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__meta {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__data {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__anexo {
+        margin-bottom: 20px;
+    }
+    
+    .comece__enviar {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    .comece__caixa {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 50px;
+        width: 350px;
+        height: 900px;
+    }
     
+    .lado__esquerdo {
+        margin-top: 0;
+    }
+    
+    #comece__titulo {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    
+    #comece__org {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #comece__desc {
+        width: 250px;
+        height: 18vh;
+        padding: 15px;
+    }
+    
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comece__categoria {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__meta {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__data {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__anexo {
+        margin-bottom: 20px;
+    }
+    
+    .comece__enviar {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 475px) {
+    .comece__caixa {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 50px;
+        width: 350px;
+        height: 900px;
+    }
     
+    .lado__esquerdo {
+        margin-top: 0;
+    }
+    
+    #comece__titulo {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: 800;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    #comece__org {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #comece__desc {
+        width: 200px;
+        height: 18vh;
+        padding: 15px;
+    }
+    
+    .lado__direito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comece__categoria {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__meta {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__data {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    #comece__anexo {
+        margin-bottom: 20px;
+    }
+    
+    .comece__enviar {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 18px;
+        border-radius: 10px;
+    }
 }
